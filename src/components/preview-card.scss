@@ -1,0 +1,74 @@
+.preview {
+	&-card {
+		border-radius: 5px;
+		border: 1px solid #e5e5e5;
+		padding: 10px;
+	}
+
+	&-img {
+		max-width: 100%;
+		border-radius: 5px;
+	}
+
+	&-title {
+		font-size: 0.9rem;
+		line-height: 1.4rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		line-clamp: 1;
+		-webkit-box-orient: vertical;
+	}
+
+	&-quantity {
+		font-size: 0.85rem;
+		line-height: 1.2rem;
+		color: orange;
+	}
+
+	&-price {
+		margin: 6px 0;
+		line-height: 1.4rem;
+		color: red;
+		font-weight: 500;
+	}
+
+	&-price-original {
+		font-size: 0.9rem;
+		line-height: 1.2rem;
+		color: #808080;
+
+		span {
+			&:first-child {
+				text-decoration: line-through;
+				margin-right: 8px;
+			}
+		}
+	}
+
+	&-discount {
+		color: red;
+	}
+
+	&-button {
+		margin-top: 10px;
+		width: 100%;
+		border: 1px solid red;
+		border-radius: 5px;
+		padding: 10px;
+		font-weight: bold;
+		color: rgba($color: red, $alpha: 0.9);
+		background-color: #fff;
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgba($color: red, $alpha: 0.9);
+			color: #fff;
+		}
+	}
+}
+
+.invisible {
+	visibility: hidden;
+}
